@@ -1,7 +1,8 @@
 # ninja log v5
-1	69	1693045767754349680	CMakeFiles/Graphene.dir/Window.cpp.o	38820517ee4bdcf3
-530	573	1693046275743993026	Graphene	c6bf8047ad7b26fe
-9	530	1693046275698764382	CMakeFiles/Graphene.dir/main.cpp.o	5576de7d8d3e171a
 4	497	1693046912678442415	CMakeFiles/Graphene.dir/Window.cpp.o	38820517ee4bdcf3
-4	1068	1693046913249347276	CMakeFiles/Graphene.dir/main.cpp.o	5576de7d8d3e171a
 1069	1110	1693046913294537588	Graphene	55d2d1e6e639effc
+4	1068	1693046913249347276	CMakeFiles/Graphene.dir/main.cpp.o	5576de7d8d3e171a
+6	120	1693047379018671030	CMakeFiles/Graphene.dir/UI/UIBar.cpp.o	a1f47cf0c86a0872
+5	559	1693047379457388034	CMakeFiles/Graphene.dir/UI/Window.cpp.o	e8a9768bc06b07ce
+5	1144	1693047380040792025	CMakeFiles/Graphene.dir/main.cpp.o	5576de7d8d3e171a
+1144	1185	1693047380085669511	Graphene	a2357dc98987a8f1

@@ -13,7 +13,7 @@ public:
 
     static void CreateWindow();
 
-    
+    static void Update();
 private:
     static int height;
     static int width;

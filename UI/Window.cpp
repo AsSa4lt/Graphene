@@ -27,3 +27,18 @@ void Window::CreateWindow() {
 sf::RenderWindow& Window::getWindow() {
     return window;
 }
+
+void Window::Update() {
+
+    while (window.isOpen()){
+        sf::Event event;
+
+        while (window.pollEvent(event)){
+            if (event.type == sf::Event::Closed)
+                window.close();
+        }
+
+        window.clear();
+        window.display();
+    }
+}

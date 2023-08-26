@@ -4,7 +4,7 @@ project(Graphene)
 set(CMAKE_CXX_STANDARD 20)
 
 # Source files
-set(SOURCE_FILES main.cpp Window.cpp Window.h)
+set(SOURCE_FILES main.cpp UI/Window.cpp UI/Window.h UI/UIBar.cpp UI/UIBar.h)
 add_executable(Graphene ${SOURCE_FILES})
 
 # Include directories
