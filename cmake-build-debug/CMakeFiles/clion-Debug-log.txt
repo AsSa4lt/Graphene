@@ -1,0 +1,6 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S "/Users/rostyslav/Desktop/C++ coding/Graphene" -B "/Users/rostyslav/Desktop/C++ coding/Graphene/cmake-build-debug"
+-- Found SFML 2.6.0 in /opt/homebrew/lib/cmake/SFML
+-- Found TGUI 0.9.5 in /opt/homebrew/lib/cmake/TGUI
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/rostyslav/Desktop/C++ coding/Graphene/cmake-build-debug
