@@ -3,3 +3,7 @@
 //
 
 #include "UIBar.h"
+
+void UIBar::Update() {
+
+}

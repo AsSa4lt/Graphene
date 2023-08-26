@@ -1,6 +1,7 @@
 #ifndef DINORUNNER_WINDOW_H
 #define DINORUNNER_WINDOW_H
 #include <SFML/Graphics.hpp>
+#include "TGUI/TGUI.hpp"
 
 class Window {
 public:
@@ -14,10 +15,12 @@ public:
     static void CreateWindow();
 
     static void Update();
+
 private:
     static int height;
     static int width;
     static sf::RenderWindow window;
+    static tgui::Gui gui;
 };
 
 #endif //DINORUNNER_WINDOW_H

@@ -3,6 +3,7 @@
 int Window::height = 0;
 int Window::width = 0;
 sf::RenderWindow Window::window;
+tgui::Gui Window::gui(Window::window);  // Attach gui
 
 int Window::getWidth() {
     return width;
@@ -22,6 +23,7 @@ void Window::setHeight(int _height) {
 
 void Window::CreateWindow() {
     window.create(sf::VideoMode(Window::getWidth(), Window::getHeight()), "DinoRunner");
+
 }
 
 sf::RenderWindow& Window::getWindow() {

@@ -7,7 +7,7 @@
 
 
 class UIBar {
-
+    void Update();
 };
 
 
