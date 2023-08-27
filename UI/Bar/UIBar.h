@@ -4,10 +4,12 @@
 
 #include <vector>
 #include "UIBarButton.h"
+#include "UIBarFileButton.h"
 
 class UIBar {
 public:
-    std::vector<UIBarButton> buttons;
+    UIBar();
+    std::vector<std::shared_ptr<UIBarButton>> buttons;
 };
 
 #endif //GRAPHENE_UIBAR_H

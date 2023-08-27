@@ -4,7 +4,7 @@
 
 #include "UIBarButton.h"
 
-tgui::Button UIBarButton::GetGuiButton() {
+tgui::Button::Ptr UIBarButton::GetGuiButton() {
     auto button = tgui::Button::create();
 
     button->setText(text);
@@ -19,7 +19,7 @@ tgui::Button UIBarButton::GetGuiButton() {
     button->onPress([this](){
         actionOnClick();
     });
-    return tgui::Button();
+    return button;
 }
 
 const Vector2 &UIBarButton::getPosition() const {
@@ -45,3 +45,4 @@ const std::string &UIBarButton::getText() const {
 void UIBarButton::setText(const std::string &text) {
     UIBarButton::text = text;
 }
+

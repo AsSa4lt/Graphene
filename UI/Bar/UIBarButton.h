@@ -13,8 +13,11 @@ class UIBarButton {
     Vector2 position = {0, 0};
     Vector2 size = {0, 0};
     std::string text = "Button";
+    tgui::Gui gui;
 public:
-    tgui::Button GetGuiButton();
+    virtual ~UIBarButton() = default;  // Virtual destructor
+
+    tgui::Button::Ptr GetGuiButton();
 
     [[nodiscard]] const Vector2 &getPosition() const;
 
@@ -22,13 +25,13 @@ public:
 
     [[nodiscard]] const Vector2 &getSize() const;
 
-    void setSize(float x, float y);
-
     [[nodiscard]] const std::string &getText() const;
 
     void setText(const std::string &text);
 
     virtual void actionOnClick() = 0;
+
+    void setSize(float x, float y);
 };
 
 

@@ -21,6 +21,10 @@ void Window::setHeight(int _height) {
 void Window::CreateWindow() {
     window.create(sf::VideoMode(width, height), "Graphene");
     gui.setTarget(window);
+    windowUIBar = UIBar();
+    for(int i = 0; i < windowUIBar.buttons.size(); i++){
+        gui.add(windowUIBar.buttons[i]->GetGuiButton());
+    }
 }
 
 
@@ -31,7 +35,7 @@ sf::RenderWindow& Window::getWindow() {
 
 void Window::Update() {
     while (window.isOpen()) {
-        sf::Event event;
+        sf::Event event{};
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed) {
                 window.close();

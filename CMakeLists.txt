@@ -4,7 +4,7 @@ project(Graphene)
 set(CMAKE_CXX_STANDARD 17)
 
 # Source files
-set(SOURCE_FILES main.cpp UI/Window.cpp UI/Window.h UI/Bar/UIBar.cpp UI/Bar/UIBar.h UI/Bar/UIBarButton.cpp UI/Bar/UIBarButton.h)
+set(SOURCE_FILES main.cpp UI/Window.cpp UI/Window.h UI/Bar/UIBar.cpp UI/Bar/UIBar.h UI/Bar/UIBarButton.cpp UI/Bar/UIBarButton.h UI/Bar/UIBarFileButton.cpp UI/Bar/UIBarFileButton.h)
 
 # Executable
 add_executable(Graphene ${SOURCE_FILES})

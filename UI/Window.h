@@ -3,6 +3,7 @@
 #define GRAPHENE_WINDOW_H
 #include <SFML/Graphics.hpp>
 #include "TGUI/TGUI.hpp"
+#include "Bar/UIBar.h"
 
 class Window {
 public:
@@ -21,6 +22,7 @@ private:
     int width = 0;
     sf::RenderWindow window;
     tgui::Gui gui;
+    UIBar windowUIBar;
 };
 
 #endif //GRAPHENE_WINDOW_H

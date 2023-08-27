@@ -3,3 +3,9 @@
 //
 
 #include "UIBar.h"
+
+UIBar::UIBar() {
+    std::shared_ptr<UIBarButton> fileButton = std::make_shared<UIBarFileButton>();
+    fileButton->setSize(20.0f, 5.0f);
+    buttons.push_back(fileButton);
+}
