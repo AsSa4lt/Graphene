@@ -1,8 +1,16 @@
 # ninja log v5
+6	615	1693138697239940654	CMakeFiles/Graphene.dir/external/imgui/imgui.cpp.o	31d73e36a08d0a4e
+1103	1149	1693138813105780849	Graphene	b3c2c48e67ae9681
+5	1274	1693138697898927502	CMakeFiles/Graphene.dir/main.cpp.o	54329796b85b2032
+0	49	1693138946397460505	build.ninja	9a83f4bc0b0e9670
+7	286	1693138696912794430	CMakeFiles/Graphene.dir/external/imgui/imgui_tables.cpp.o	21626747d20212c1
+1	30	1693050481231112102	CMakeFiles/Graphene.dir/UI/UIBar.cpp.o	a1f47cf0c86a0872
+6	338	1693138696964819550	CMakeFiles/Graphene.dir/external/imgui/imgui_demo.cpp.o	8fcfbe42f7bb6ee3
+338	849	1693138697476075135	CMakeFiles/Graphene.dir/external/imgui-sfml/imgui-SFML.cpp.o	e28949ad52b49dd9
+5	1103	1693138813055846192	CMakeFiles/Graphene.dir/UI/Window.cpp.o	236c8cd09e078cf0
+6	342	1693138696970490207	CMakeFiles/Graphene.dir/external/imgui/imgui_draw.cpp.o	1666767d70e867ef
 4	497	1693046912678442415	CMakeFiles/Graphene.dir/Window.cpp.o	38820517ee4bdcf3
-1069	1110	1693046913294537588	Graphene	55d2d1e6e639effc
-4	1068	1693046913249347276	CMakeFiles/Graphene.dir/main.cpp.o	5576de7d8d3e171a
-6	120	1693047379018671030	CMakeFiles/Graphene.dir/UI/UIBar.cpp.o	a1f47cf0c86a0872
-5	559	1693047379457388034	CMakeFiles/Graphene.dir/UI/Window.cpp.o	e8a9768bc06b07ce
-5	1144	1693047380040792025	CMakeFiles/Graphene.dir/main.cpp.o	5576de7d8d3e171a
-1144	1185	1693047380085669511	Graphene	a2357dc98987a8f1
+286	701	1693138697328052965	CMakeFiles/Graphene.dir/external/imgui/imgui_widgets.cpp.o	7642153407623a20
+5	1116	1693138949330110020	CMakeFiles/Graphene.dir/main.cpp.o	fb5a77e92f9b1a86
+5	1191	1693138949404308323	CMakeFiles/Graphene.dir/UI/Window.cpp.o	823d519d70a427a4
+1191	1233	1693138949451856821	Graphene	6788b0bdcc8cdbf8
