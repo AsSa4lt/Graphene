@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.24)
 project(Graphene)
 
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 17)
 
 # Source files
-set(SOURCE_FILES main.cpp UI/Window.cpp UI/Window.h UI/UIBar.cpp UI/UIBar.h UI/UIBarButton.cpp UI/UIBarButton.h)
+set(SOURCE_FILES main.cpp UI/Window.cpp UI/Window.h UI/Bar/UIBar.cpp UI/Bar/UIBar.h UI/Bar/UIBarButton.cpp UI/Bar/UIBarButton.h)
 
 # Executable
 add_executable(Graphene ${SOURCE_FILES})

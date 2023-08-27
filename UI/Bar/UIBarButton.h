@@ -4,7 +4,8 @@
 
 #ifndef GRAPHENE_UIBARBUTTON_H
 #define GRAPHENE_UIBARBUTTON_H
-#include "UIBar.h"
+
+#include <raymath.h>
 #include "iostream"
 #include "TGUI/TGUI.hpp"
 
@@ -15,17 +16,19 @@ class UIBarButton {
 public:
     tgui::Button GetGuiButton();
 
-    const Vector2 &getPosition() const;
+    [[nodiscard]] const Vector2 &getPosition() const;
 
-    void setPosition(int x, int y);
+    void setPosition(float x, float y);
 
-    const Vector2 &getSize() const;
+    [[nodiscard]] const Vector2 &getSize() const;
 
-    void setSize(int x, int y);
+    void setSize(float x, float y);
 
-    const std::string &getText() const;
+    [[nodiscard]] const std::string &getText() const;
 
     void setText(const std::string &text);
+
+    virtual void actionOnClick() = 0;
 };
 
 
