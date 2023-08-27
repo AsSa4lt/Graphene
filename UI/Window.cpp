@@ -21,20 +21,6 @@ void Window::setHeight(int _height) {
 void Window::CreateWindow() {
     window.create(sf::VideoMode(width, height), "Graphene");
     gui.setTarget(window);
-
-    // Create the button
-    auto button = tgui::Button::create();
-    button->setText("Click Me!");
-    button->setSize("10%", "8%");
-    button->setPosition("&.width - width", "0");  // Top-right corner
-
-    // Connect the button to some action
-    button->onPress([](){
-        std::cout << "Button clicked!" << std::endl;
-    });
-
-    // Add the button to the gui
-    gui.add(button);
 }
 
 
