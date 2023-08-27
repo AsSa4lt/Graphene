@@ -1,6 +1,5 @@
 // Window.cpp
 #include "Window.h"
-#include <TGUI/Widgets/Button.hpp>
 
 int Window::getWidth() {
     return width;
@@ -22,8 +21,8 @@ void Window::CreateWindow() {
     window.create(sf::VideoMode(width, height), "Graphene");
     gui.setTarget(window);
     windowUIBar = UIBar();
-    for(int i = 0; i < windowUIBar.buttons.size(); i++){
-        gui.add(windowUIBar.buttons[i]->GetGuiButton());
+    for(const auto & button : windowUIBar.buttons){
+        gui.add(button->GetGuiButton());
     }
 }
 
