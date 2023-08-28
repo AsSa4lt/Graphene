@@ -31,22 +31,41 @@ sf::RenderWindow& Window::getWindow() {
     return window;
 }
 
-void Window::Update() {
-    while (window.isOpen()) {
-        sf::Event event{};
-        while (window.pollEvent(event)) {
-            if (event.type == sf::Event::Closed) {
-                window.close();
-            }
+#include <SFML/Graphics.hpp>
+#include <SFML/System/Clock.hpp>
+#include <SFML/System/Time.hpp>
 
-            gui.handleEvent(event); // Optional: pass the event to tgui
+// ... (your other includes)
+
+void Window::Update() {
+    sf::Clock clock;  // Start a timer
+    sf::Time timeSinceLastUpdate = sf::Time::Zero;
+    sf::Time timePerFrame = sf::seconds(1.0f / fps);  // 60 frames per second
+
+    while (window.isOpen()) {
+        sf::Time elapsedTime = clock.restart();  // Restart the clock and return the time elapsed
+        timeSinceLastUpdate += elapsedTime;
+
+        while (timeSinceLastUpdate > timePerFrame) {
+            timeSinceLastUpdate -= timePerFrame;
+
+            // Process events
+            sf::Event event{};
+            while (window.pollEvent(event)) {
+                if (event.type == sf::Event::Closed) {
+                    window.close();
+                }
+                gui.handleEvent(event);
+            }
         }
 
+        // Clear screen and draw
         window.clear();
-        gui.draw();  // Optional: draw the gui
+        gui.draw();
         window.display();
     }
 }
+
 
 Window::Window() : windowUIBar(gui) {
 

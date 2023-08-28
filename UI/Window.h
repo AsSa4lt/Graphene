@@ -4,6 +4,8 @@
 #include <SFML/Graphics.hpp>
 #include "TGUI/TGUI.hpp"
 #include "Bar/UIBar.h"
+#include <SFML/System/Clock.hpp>
+#include <SFML/System/Time.hpp>
 
 class Window {
 public:
@@ -23,7 +25,8 @@ private:
     int width = 0;
     sf::RenderWindow window;
     tgui::Gui gui;
-    UIBar windowUIBar;  // This line will be modified
+    UIBar windowUIBar;
+    static const int fps = 60;
 };
 
 #endif //GRAPHENE_WINDOW_H
