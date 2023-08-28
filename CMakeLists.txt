@@ -11,6 +11,8 @@ add_executable(Graphene ${SOURCE_FILES})
 
 # Include directories
 include_directories(/usr/local/include)
+include_directories(${IMGUI_DIR})  # Include ImGui directory
+
 
 # Find SFML
 find_package(SFML COMPONENTS system window graphics network audio REQUIRED)
@@ -21,3 +23,4 @@ target_link_libraries(Graphene sfml-system sfml-window sfml-graphics sfml-audio 
 find_package(TGUI REQUIRED)
 include_directories(${TGUI_INCLUDE_DIRS})
 target_link_libraries(Graphene tgui)
+

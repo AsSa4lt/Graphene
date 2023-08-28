@@ -4,6 +4,6 @@
 
 #include "UIBarFileButton.h"
 
-void UIBarFileButton::actionOnClick() {
 
+void UIBarFileButton::actionOnClick() {
 }

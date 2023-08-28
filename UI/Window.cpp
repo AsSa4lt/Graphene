@@ -17,10 +17,9 @@ void Window::setHeight(int _height) {
     height = _height;
 }
 
-void Window::CreateWindow() {
+void Window::CreateWindow()  {
     window.create(sf::VideoMode(width, height), "Graphene");
     gui.setTarget(window);
-    windowUIBar = UIBar();
     for(const auto & button : windowUIBar.buttons){
         gui.add(button->GetGuiButton());
     }
@@ -47,4 +46,8 @@ void Window::Update() {
         gui.draw();  // Optional: draw the gui
         window.display();
     }
+}
+
+Window::Window() : windowUIBar(gui) {
+
 }
