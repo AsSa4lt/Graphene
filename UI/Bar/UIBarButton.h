@@ -13,6 +13,7 @@ class UIBarButton {
     Vector2 position = {0, 0};
     Vector2 size = {0, 0};
     std::string text = "Button";
+protected:
     tgui::Gui gui;
 public:
     virtual ~UIBarButton() = default;  // Virtual destructor

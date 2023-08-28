@@ -11,6 +11,9 @@
 class UIBarFileButton : public UIBarButton {
 public:
     void actionOnClick() override;
+    UIBarFileButton(tgui::Gui& gui);
+private:
+    tgui::Gui& m_gui;
 };
 
 
