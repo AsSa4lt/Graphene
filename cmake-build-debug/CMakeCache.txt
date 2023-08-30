@@ -285,6 +285,15 @@ imgui_sfml_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 imgui_sfml_SOURCE_DIR:STATIC=/Users/rostyslav/Desktop/C++ coding/Graphene/external/imgui-sfml
 
+//Value Computed by CMake
+nfd_BINARY_DIR:STATIC=/Users/rostyslav/Desktop/C++ coding/Graphene/cmake-build-debug/external/nativefiledialog
+
+//Value Computed by CMake
+nfd_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+nfd_SOURCE_DIR:STATIC=/Users/rostyslav/Desktop/C++ coding/Graphene/external/nativefiledialog
+
 
 ########################
 # INTERNAL cache entries
@@ -378,7 +387,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -423,6 +432,8 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/OpenGL.framework][/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/OpenGL.framework][c ][v()]
+//Have include AppKit/AppKit.h
+HAS_APPKIT:INTERNAL=
 //ADVANCED property for variable: OPENGL_INCLUDE_DIR
 OPENGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_gl_LIBRARY

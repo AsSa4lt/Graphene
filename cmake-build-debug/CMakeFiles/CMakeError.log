@@ -20,3 +20,90 @@ ld: library not found for -lc++
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 
 
+Determining if the include file AppKit/AppKit.h exists failed with the following output:
+Change Dir: /Users/rostyslav/Desktop/C++ coding/Graphene/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_3f247 && [1/2] Building C object CMakeFiles/cmTC_3f247.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_3f247.dir/CheckIncludeFile.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_3f247.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_3f247.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_3f247.dir/CheckIncludeFile.c.o -c '/Users/rostyslav/Desktop/C++ coding/Graphene/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c'
+In file included from /Users/rostyslav/Desktop/C++ coding/Graphene/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:8:
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h:601:1: error: expected identifier or '('
+@class NSString, Protocol;
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h:603:9: error: unknown type name 'NSString'
+typedef NSString * NSExceptionName NS_TYPED_EXTENSIBLE_ENUM;
+        ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h:604:9: error: unknown type name 'NSString'
+typedef NSString * NSRunLoopMode NS_TYPED_EXTENSIBLE_ENUM;
+        ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h:606:19: error: unknown type name 'NSString'
+FOUNDATION_EXPORT NSString *NSStringFromSelector(SEL aSelector);
+                  ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h:607:44: error: unknown type name 'NSString'
+FOUNDATION_EXPORT SEL NSSelectorFromString(NSString *aSelectorName);
+                                           ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h:609:19: error: unknown type name 'NSString'
+FOUNDATION_EXPORT NSString *NSStringFromClass(Class aClass);
+                  ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h:610:53: error: unknown type name 'NSString'
+FOUNDATION_EXPORT Class _Nullable NSClassFromString(NSString *aClassName);
+                                                    ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h:612:19: error: unknown type name 'NSString'
+FOUNDATION_EXPORT NSString *NSStringFromProtocol(Protocol *proto) API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
+                  ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h:612:50: error: unknown type name 'Protocol'
+FOUNDATION_EXPORT NSString *NSStringFromProtocol(Protocol *proto) API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
+                                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h:613:19: error: unknown type name 'Protocol'
+FOUNDATION_EXPORT Protocol * _Nullable NSProtocolFromString(NSString *namestr) API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
+                  ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h:613:61: error: unknown type name 'NSString'
+FOUNDATION_EXPORT Protocol * _Nullable NSProtocolFromString(NSString *namestr) API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
+                                                            ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h:617:30: error: unknown type name 'NSString'
+FOUNDATION_EXPORT void NSLog(NSString *format, ...) NS_FORMAT_FUNCTION(1,2) NS_NO_TAIL_CALL;
+                             ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h:617:53: error: format argument not a string type
+FOUNDATION_EXPORT void NSLog(NSString *format, ...) NS_FORMAT_FUNCTION(1,2) NS_NO_TAIL_CALL;
+                             ~~~~~~~~~~~~~~~~       ^                  ~
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h:94:49: note: expanded from macro 'NS_FORMAT_FUNCTION'
+        #define NS_FORMAT_FUNCTION(F,A) __attribute__((format(__NSString__, F, A)))
+                                                       ^                    ~
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h:618:31: error: unknown type name 'NSString'
+FOUNDATION_EXPORT void NSLogv(NSString *format, va_list args) NS_FORMAT_FUNCTION(1,0) NS_NO_TAIL_CALL;
+                              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h:618:63: error: format argument not a string type
+FOUNDATION_EXPORT void NSLogv(NSString *format, va_list args) NS_FORMAT_FUNCTION(1,0) NS_NO_TAIL_CALL;
+                              ~~~~~~~~~~~~~~~~                ^                  ~
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h:94:49: note: expanded from macro 'NS_FORMAT_FUNCTION'
+        #define NS_FORMAT_FUNCTION(F,A) __attribute__((format(__NSString__, F, A)))
+                                                       ^                    ~
+In file included from /Users/rostyslav/Desktop/C++ coding/Graphene/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSArray.h:5:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:8:
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSZone.h:9:1: error: expected identifier or '('
+@class NSString;
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSZone.h:19:63: error: unknown type name 'NSString'
+FOUNDATION_EXPORT void NSSetZoneName(NSZone * _Nullable zone, NSString *name)NS_SWIFT_UNAVAILABLE("Zone-based memory management is unavailable");
+                                                              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSZone.h:20:19: error: unknown type name 'NSString'
+FOUNDATION_EXPORT NSString *NSZoneName(NSZone * _Nullable zone) NS_SWIFT_UNAVAILABLE("Zone-based memory management is unavailable");
+                  ^
+In file included from /Users/rostyslav/Desktop/C++ coding/Graphene/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:10:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSArray.h:5:
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:10:1: error: expected identifier or '('
+@class NSInvocation, NSMethodSignature, NSCoder, NSString, NSEnumerator;
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+ninja: build stopped: subcommand failed.
+
+
+
