@@ -7,7 +7,8 @@
 
 
 void UIBarFileButton::actionOnClick() {
-    FileLoader fileLoader(m_gui, ".gph");
+    FileLoader fileLoader(m_gui);
+    fileLoader.selectOneFile(".txt");
 }
 
 
