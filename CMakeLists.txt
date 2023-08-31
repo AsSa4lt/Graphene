@@ -3,8 +3,6 @@ project(Graphene)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# Add nativefiledialog as a subdirectory
-add_subdirectory(external/nativefiledialog)
 
 # Source files
 set(SOURCE_FILES
@@ -19,6 +17,7 @@ set(SOURCE_FILES
         UI/Bar/UIBarFileButton.h
         UI/Bar/Helpers/FIleLoader.cpp
         UI/Bar/Helpers/FIleLoader.h
+        external/tinyfiledialogs/tinyfiledialogs.c
         )
 
 # Executable
@@ -26,6 +25,7 @@ add_executable(Graphene ${SOURCE_FILES})
 
 # Include directories
 include_directories(/usr/local/include)
+include_directories(external/tinyfiledialogs)
 
 # Find SFML
 find_package(SFML COMPONENTS system window graphics network audio REQUIRED)
@@ -36,6 +36,3 @@ target_link_libraries(Graphene sfml-system sfml-window sfml-graphics sfml-audio 
 find_package(TGUI REQUIRED)
 include_directories(${TGUI_INCLUDE_DIRS})
 target_link_libraries(Graphene tgui)
-
-# Link nativefiledialog
-target_link_libraries(Graphene nfd)

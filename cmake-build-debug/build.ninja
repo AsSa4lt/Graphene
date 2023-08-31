@@ -44,13 +44,13 @@ cmake_ninja_workdir = /Users/rostyslav/Desktop/C++$ coding/Graphene/cmake-build-
 #############################################
 # Order-only phony target for Graphene
 
-build cmake_object_order_depends_target_Graphene: phony || cmake_object_order_depends_target_nfd
+build cmake_object_order_depends_target_Graphene: phony || CMakeFiles/Graphene.dir
 
 build CMakeFiles/Graphene.dir/main.cpp.o: CXX_COMPILER__Graphene_Debug /Users/rostyslav/Desktop/C++$ coding/Graphene/main.cpp || cmake_object_order_depends_target_Graphene
   DEFINES = -DTGUI_DYNAMIC
   DEP_FILE = CMakeFiles/Graphene.dir/main.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics -std=gnu++17
-  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/nativefiledialog/src/include" -isystem /opt/homebrew/include
+  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/tinyfiledialogs" -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/Graphene.dir
   OBJECT_FILE_DIR = CMakeFiles/Graphene.dir
 
@@ -58,7 +58,7 @@ build CMakeFiles/Graphene.dir/UI/Window.cpp.o: CXX_COMPILER__Graphene_Debug /Use
   DEFINES = -DTGUI_DYNAMIC
   DEP_FILE = CMakeFiles/Graphene.dir/UI/Window.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics -std=gnu++17
-  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/nativefiledialog/src/include" -isystem /opt/homebrew/include
+  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/tinyfiledialogs" -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/Graphene.dir
   OBJECT_FILE_DIR = CMakeFiles/Graphene.dir/UI
 
@@ -66,7 +66,7 @@ build CMakeFiles/Graphene.dir/UI/Bar/UIBar.cpp.o: CXX_COMPILER__Graphene_Debug /
   DEFINES = -DTGUI_DYNAMIC
   DEP_FILE = CMakeFiles/Graphene.dir/UI/Bar/UIBar.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics -std=gnu++17
-  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/nativefiledialog/src/include" -isystem /opt/homebrew/include
+  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/tinyfiledialogs" -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/Graphene.dir
   OBJECT_FILE_DIR = CMakeFiles/Graphene.dir/UI/Bar
 
@@ -74,7 +74,7 @@ build CMakeFiles/Graphene.dir/UI/Bar/UIBarButton.cpp.o: CXX_COMPILER__Graphene_D
   DEFINES = -DTGUI_DYNAMIC
   DEP_FILE = CMakeFiles/Graphene.dir/UI/Bar/UIBarButton.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics -std=gnu++17
-  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/nativefiledialog/src/include" -isystem /opt/homebrew/include
+  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/tinyfiledialogs" -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/Graphene.dir
   OBJECT_FILE_DIR = CMakeFiles/Graphene.dir/UI/Bar
 
@@ -82,7 +82,7 @@ build CMakeFiles/Graphene.dir/UI/Bar/UIBarFileButton.cpp.o: CXX_COMPILER__Graphe
   DEFINES = -DTGUI_DYNAMIC
   DEP_FILE = CMakeFiles/Graphene.dir/UI/Bar/UIBarFileButton.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics -std=gnu++17
-  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/nativefiledialog/src/include" -isystem /opt/homebrew/include
+  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/tinyfiledialogs" -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/Graphene.dir
   OBJECT_FILE_DIR = CMakeFiles/Graphene.dir/UI/Bar
 
@@ -90,9 +90,17 @@ build CMakeFiles/Graphene.dir/UI/Bar/Helpers/FIleLoader.cpp.o: CXX_COMPILER__Gra
   DEFINES = -DTGUI_DYNAMIC
   DEP_FILE = CMakeFiles/Graphene.dir/UI/Bar/Helpers/FIleLoader.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics -std=gnu++17
-  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/nativefiledialog/src/include" -isystem /opt/homebrew/include
+  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/tinyfiledialogs" -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/Graphene.dir
   OBJECT_FILE_DIR = CMakeFiles/Graphene.dir/UI/Bar/Helpers
+
+build CMakeFiles/Graphene.dir/external/tinyfiledialogs/tinyfiledialogs.c.o: C_COMPILER__Graphene_Debug /Users/rostyslav/Desktop/C++$ coding/Graphene/external/tinyfiledialogs/tinyfiledialogs.c || cmake_object_order_depends_target_Graphene
+  DEFINES = -DTGUI_DYNAMIC
+  DEP_FILE = CMakeFiles/Graphene.dir/external/tinyfiledialogs/tinyfiledialogs.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics
+  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/tinyfiledialogs" -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/Graphene.dir
+  OBJECT_FILE_DIR = CMakeFiles/Graphene.dir/external/tinyfiledialogs
 
 
 # =============================================================================
@@ -102,9 +110,9 @@ build CMakeFiles/Graphene.dir/UI/Bar/Helpers/FIleLoader.cpp.o: CXX_COMPILER__Gra
 #############################################
 # Link the executable Graphene
 
-build Graphene: CXX_EXECUTABLE_LINKER__Graphene_Debug CMakeFiles/Graphene.dir/main.cpp.o CMakeFiles/Graphene.dir/UI/Window.cpp.o CMakeFiles/Graphene.dir/UI/Bar/UIBar.cpp.o CMakeFiles/Graphene.dir/UI/Bar/UIBarButton.cpp.o CMakeFiles/Graphene.dir/UI/Bar/UIBarFileButton.cpp.o CMakeFiles/Graphene.dir/UI/Bar/Helpers/FIleLoader.cpp.o | /opt/homebrew/lib/libsfml-audio.2.6.0.dylib /opt/homebrew/lib/libsfml-network.2.6.0.dylib /opt/homebrew/lib/libtgui.0.9.5.dylib external/nativefiledialog/libnfd.a /opt/homebrew/lib/libsfml-graphics.2.6.0.dylib /opt/homebrew/lib/libsfml-window.2.6.0.dylib /opt/homebrew/lib/libsfml-system.2.6.0.dylib || external/nativefiledialog/libnfd.a
+build Graphene: CXX_EXECUTABLE_LINKER__Graphene_Debug CMakeFiles/Graphene.dir/main.cpp.o CMakeFiles/Graphene.dir/UI/Window.cpp.o CMakeFiles/Graphene.dir/UI/Bar/UIBar.cpp.o CMakeFiles/Graphene.dir/UI/Bar/UIBarButton.cpp.o CMakeFiles/Graphene.dir/UI/Bar/UIBarFileButton.cpp.o CMakeFiles/Graphene.dir/UI/Bar/Helpers/FIleLoader.cpp.o CMakeFiles/Graphene.dir/external/tinyfiledialogs/tinyfiledialogs.c.o | /opt/homebrew/lib/libsfml-audio.2.6.0.dylib /opt/homebrew/lib/libsfml-network.2.6.0.dylib /opt/homebrew/lib/libtgui.0.9.5.dylib /opt/homebrew/lib/libsfml-graphics.2.6.0.dylib /opt/homebrew/lib/libsfml-window.2.6.0.dylib /opt/homebrew/lib/libsfml-system.2.6.0.dylib
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0
-  LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/lib  /opt/homebrew/lib/libsfml-audio.2.6.0.dylib  /opt/homebrew/lib/libsfml-network.2.6.0.dylib  /opt/homebrew/lib/libtgui.0.9.5.dylib  external/nativefiledialog/libnfd.a  /opt/homebrew/lib/libsfml-graphics.2.6.0.dylib  /opt/homebrew/lib/libsfml-window.2.6.0.dylib  /opt/homebrew/lib/libsfml-system.2.6.0.dylib
+  LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/lib  /opt/homebrew/lib/libsfml-audio.2.6.0.dylib  /opt/homebrew/lib/libsfml-network.2.6.0.dylib  /opt/homebrew/lib/libtgui.0.9.5.dylib  /opt/homebrew/lib/libsfml-graphics.2.6.0.dylib  /opt/homebrew/lib/libsfml-window.2.6.0.dylib  /opt/homebrew/lib/libsfml-system.2.6.0.dylib
   OBJECT_DIR = CMakeFiles/Graphene.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -135,79 +143,7 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /Users/rostyslav/Desktop/C++ coding/Graphene/CMakeLists.txt
-# =============================================================================
-
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target nfd
-
-
-#############################################
-# Order-only phony target for nfd
-
-build cmake_object_order_depends_target_nfd: phony || external/nativefiledialog/CMakeFiles/nfd.dir
-
-build external/nativefiledialog/CMakeFiles/nfd.dir/src/nfd_common.c.o: C_COMPILER__nfd_Debug /Users/rostyslav/Desktop/C++$ coding/Graphene/external/nativefiledialog/src/nfd_common.c || cmake_object_order_depends_target_nfd
-  DEP_FILE = external/nativefiledialog/CMakeFiles/nfd.dir/src/nfd_common.c.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics
-  INCLUDES = -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/nativefiledialog/src/include"
-  OBJECT_DIR = external/nativefiledialog/CMakeFiles/nfd.dir
-  OBJECT_FILE_DIR = external/nativefiledialog/CMakeFiles/nfd.dir/src
-
-build external/nativefiledialog/CMakeFiles/nfd.dir/src/nfd_cocoa.m.o: C_COMPILER__nfd_Debug /Users/rostyslav/Desktop/C++$ coding/Graphene/external/nativefiledialog/src/nfd_cocoa.m || cmake_object_order_depends_target_nfd
-  DEP_FILE = external/nativefiledialog/CMakeFiles/nfd.dir/src/nfd_cocoa.m.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics
-  INCLUDES = -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/nativefiledialog/src/include"
-  OBJECT_DIR = external/nativefiledialog/CMakeFiles/nfd.dir
-  OBJECT_FILE_DIR = external/nativefiledialog/CMakeFiles/nfd.dir/src
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target nfd
-
-
-#############################################
-# Link the static library external/nativefiledialog/libnfd.a
-
-build external/nativefiledialog/libnfd.a: C_STATIC_LIBRARY_LINKER__nfd_Debug external/nativefiledialog/CMakeFiles/nfd.dir/src/nfd_common.c.o external/nativefiledialog/CMakeFiles/nfd.dir/src/nfd_cocoa.m.o
-  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = external/nativefiledialog/CMakeFiles/nfd.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = external/nativefiledialog/libnfd.a
-  TARGET_PDB = nfd.a.dbg
-
-
-#############################################
-# Utility command for edit_cache
-
-build external/nativefiledialog/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/Users/rostyslav/Desktop/C++ coding/Graphene/cmake-build-debug/external/nativefiledialog" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build external/nativefiledialog/edit_cache: phony external/nativefiledialog/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build external/nativefiledialog/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/Users/rostyslav/Desktop/C++ coding/Graphene/cmake-build-debug/external/nativefiledialog" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/rostyslav/Desktop/C++ coding/Graphene" -B"/Users/rostyslav/Desktop/C++ coding/Graphene/cmake-build-debug"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build external/nativefiledialog/rebuild_cache: phony external/nativefiledialog/CMakeFiles/rebuild_cache.util
-
-# =============================================================================
 # Target aliases.
-
-build libnfd.a: phony external/nativefiledialog/libnfd.a
-
-build nfd: phony external/nativefiledialog/libnfd.a
 
 # =============================================================================
 # Folder targets.
@@ -217,14 +153,7 @@ build nfd: phony external/nativefiledialog/libnfd.a
 #############################################
 # Folder: /Users/rostyslav/Desktop/C++ coding/Graphene/cmake-build-debug
 
-build all: phony Graphene external/nativefiledialog/all
-
-# =============================================================================
-
-#############################################
-# Folder: /Users/rostyslav/Desktop/C++ coding/Graphene/cmake-build-debug/external/nativefiledialog
-
-build external/nativefiledialog/all: phony external/nativefiledialog/libnfd.a
+build all: phony Graphene
 
 # =============================================================================
 # Built-in targets
@@ -233,14 +162,14 @@ build external/nativefiledialog/all: phony external/nativefiledialog/libnfd.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/rostyslav/Desktop/C++$ coding/Graphene/CMakeLists.txt /Users/rostyslav/Desktop/C++$ coding/Graphene/external/nativefiledialog/CMakeLists.txt /opt/homebrew/lib/cmake/SFML/SFMLConfig.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigDependencies.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigVersion.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets-release.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets.cmake /opt/homebrew/lib/cmake/TGUI/TGUIConfig.cmake /opt/homebrew/lib/cmake/TGUI/TGUIConfigVersion.cmake /opt/homebrew/lib/cmake/TGUI/TGUISharedTargets-release.cmake /opt/homebrew/lib/cmake/TGUI/TGUISharedTargets.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/rostyslav/Desktop/C++$ coding/Graphene/CMakeLists.txt /opt/homebrew/lib/cmake/SFML/SFMLConfig.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigDependencies.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigVersion.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets-release.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets.cmake /opt/homebrew/lib/cmake/TGUI/TGUIConfig.cmake /opt/homebrew/lib/cmake/TGUI/TGUIConfigVersion.cmake /opt/homebrew/lib/cmake/TGUI/TGUISharedTargets-release.cmake /opt/homebrew/lib/cmake/TGUI/TGUISharedTargets.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/rostyslav/Desktop/C++$ coding/Graphene/CMakeLists.txt /Users/rostyslav/Desktop/C++$ coding/Graphene/external/nativefiledialog/CMakeLists.txt /opt/homebrew/lib/cmake/SFML/SFMLConfig.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigDependencies.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigVersion.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets-release.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets.cmake /opt/homebrew/lib/cmake/TGUI/TGUIConfig.cmake /opt/homebrew/lib/cmake/TGUI/TGUIConfigVersion.cmake /opt/homebrew/lib/cmake/TGUI/TGUISharedTargets-release.cmake /opt/homebrew/lib/cmake/TGUI/TGUISharedTargets.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/rostyslav/Desktop/C++$ coding/Graphene/CMakeLists.txt /opt/homebrew/lib/cmake/SFML/SFMLConfig.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigDependencies.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigVersion.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets-release.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets.cmake /opt/homebrew/lib/cmake/TGUI/TGUIConfig.cmake /opt/homebrew/lib/cmake/TGUI/TGUIConfigVersion.cmake /opt/homebrew/lib/cmake/TGUI/TGUISharedTargets-release.cmake /opt/homebrew/lib/cmake/TGUI/TGUISharedTargets.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
 
 
 #############################################

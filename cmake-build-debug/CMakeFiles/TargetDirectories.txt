@@ -1,6 +1,3 @@
 /Users/rostyslav/Desktop/C++ coding/Graphene/cmake-build-debug/CMakeFiles/Graphene.dir
 /Users/rostyslav/Desktop/C++ coding/Graphene/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/rostyslav/Desktop/C++ coding/Graphene/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/rostyslav/Desktop/C++ coding/Graphene/cmake-build-debug/external/nativefiledialog/CMakeFiles/nfd.dir
-/Users/rostyslav/Desktop/C++ coding/Graphene/cmake-build-debug/external/nativefiledialog/CMakeFiles/edit_cache.dir
-/Users/rostyslav/Desktop/C++ coding/Graphene/cmake-build-debug/external/nativefiledialog/CMakeFiles/rebuild_cache.dir
