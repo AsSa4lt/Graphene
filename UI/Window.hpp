@@ -1,9 +1,9 @@
-#ifndef GRAPHENE_WINDOW_H
-#define GRAPHENE_WINDOW_H
+#ifndef GRAPHENE_WINDOW_HPP
+#define GRAPHENE_WINDOW_HPP
 
 #include <SFML/Graphics.hpp>
 #include "TGUI/TGUI.hpp"
-#include "Bar/UIBar.h"
+#include "Bar/UIBar.hpp"
 #include <SFML/System/Clock.hpp>
 #include <SFML/System/Time.hpp>
 
@@ -29,4 +29,4 @@ private:
     static const int fps = 60;
 };
 
-#endif //GRAPHENE_WINDOW_H
+#endif //GRAPHENE_WINDOW_HPP

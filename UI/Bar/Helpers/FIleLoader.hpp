@@ -1,8 +1,8 @@
 //
 // Created by Rostyslav on 30.08.2023.
 //
-#ifndef GRAPHENE_FILELOADER_H
-#define GRAPHENE_FILELOADER_H
+#ifndef GRAPHENE_FILELOADER_HPP
+#define GRAPHENE_FILELOADER_HPP
 
 #include <TGUI/TGUI.hpp>
 #include <vector>
@@ -19,4 +19,4 @@ private:
     tgui::Gui& m_gui;
 };
 
-#endif // GRAPHENE_FILELOADER_H
+#endif // GRAPHENE_FILELOADER_HPP

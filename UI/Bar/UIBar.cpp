@@ -2,7 +2,7 @@
 // Created by Rostyslav on 27.08.2023.
 //
 
-#include "UIBar.h"
+#include "UIBar.hpp"
 
 UIBar::UIBar(tgui::Gui& gui) : m_gui(gui) {
     std::shared_ptr<UIBarButton> fileButton = std::make_shared<UIBarFileButton>(gui);

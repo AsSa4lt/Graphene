@@ -8,15 +8,15 @@ set(CMAKE_CXX_STANDARD 17)
 set(SOURCE_FILES
         main.cpp
         UI/Window.cpp
-        UI/Window.h
+        UI/Window.hpp
         UI/Bar/UIBar.cpp
-        UI/Bar/UIBar.h
+        UI/Bar/UIBar.hpp
         UI/Bar/UIBarButton.cpp
-        UI/Bar/UIBarButton.h
+        UI/Bar/UIBarButton.hpp
         UI/Bar/UIBarFileButton.cpp
-        UI/Bar/UIBarFileButton.h
+        UI/Bar/UIBarFileButton.hpp
         UI/Bar/Helpers/FIleLoader.cpp
-        UI/Bar/Helpers/FIleLoader.h
+        UI/Bar/Helpers/FIleLoader.hpp
         external/tinyfiledialogs/tinyfiledialogs.c
         )
 

@@ -1,10 +1,10 @@
 // UIBar.h
-#ifndef GRAPHENE_UIBAR_H
-#define GRAPHENE_UIBAR_H
+#ifndef GRAPHENE_UIBAR_HPP
+#define GRAPHENE_UIBAR_HPP
 
 #include <vector>
-#include "UIBarButton.h"
-#include "UIBarFileButton.h"
+#include "UIBarButton.hpp"
+#include "UIBarFileButton.hpp"
 
 #include "TGUI/TGUI.hpp"
 
@@ -17,4 +17,4 @@ private:
 };
 
 
-#endif //GRAPHENE_UIBAR_H
+#endif //GRAPHENE_UIBAR_HPP

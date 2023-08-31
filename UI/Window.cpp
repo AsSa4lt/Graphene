@@ -1,5 +1,5 @@
 // Window.cpp
-#include "Window.h"
+#include "Window.hpp"
 
 int Window::getWidth() {
     return width;

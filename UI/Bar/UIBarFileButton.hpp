@@ -2,11 +2,11 @@
 // Created by Rostyslav on 27.08.2023.
 //
 
-#ifndef GRAPHENE_UIBARFILEBUTTON_H
-#define GRAPHENE_UIBARFILEBUTTON_H
+#ifndef GRAPHENE_UIBARFILEBUTTON_HPP
+#define GRAPHENE_UIBARFILEBUTTON_HPP
 
 
-#include "UIBar.h"
+#include "UIBar.hpp"
 
 class UIBarFileButton : public UIBarButton {
 public:
@@ -17,4 +17,4 @@ private:
 };
 
 
-#endif //GRAPHENE_UIBARFILEBUTTON_H
+#endif //GRAPHENE_UIBARFILEBUTTON_HPP

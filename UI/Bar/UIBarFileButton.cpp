@@ -2,8 +2,8 @@
 // Created by Rostyslav on 27.08.2023.
 //
 
-#include "UIBarFileButton.h"
-#include "Helpers/FIleLoader.h"
+#include "UIBarFileButton.hpp"
+#include "Helpers/FIleLoader.hpp"
 
 
 void UIBarFileButton::actionOnClick() {

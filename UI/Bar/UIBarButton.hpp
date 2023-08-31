@@ -2,8 +2,8 @@
 // Created by Rostyslav on 27.08.2023.
 //
 
-#ifndef GRAPHENE_UIBARBUTTON_H
-#define GRAPHENE_UIBARBUTTON_H
+#ifndef GRAPHENE_UIBARBUTTON_HPP
+#define GRAPHENE_UIBARBUTTON_HPP
 
 #include <raymath.h>
 #include "iostream"
@@ -36,4 +36,4 @@ public:
 };
 
 
-#endif //GRAPHENE_UIBARBUTTON_H
+#endif //GRAPHENE_UIBARBUTTON_HPP

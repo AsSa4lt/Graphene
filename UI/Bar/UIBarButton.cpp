@@ -2,7 +2,7 @@
 // Created by Rostyslav on 27.08.2023.
 //
 
-#include "UIBarButton.h"
+#include "UIBarButton.hpp"
 
 tgui::Button::Ptr UIBarButton::GetGuiButton() {
     auto button = tgui::Button::create();
