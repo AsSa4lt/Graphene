@@ -50,7 +50,7 @@ build CMakeFiles/Graphene.dir/main.cpp.o: CXX_COMPILER__Graphene_Debug /Users/ro
   DEFINES = -DTGUI_DYNAMIC
   DEP_FILE = CMakeFiles/Graphene.dir/main.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics -std=gnu++17
-  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/tinyfiledialogs" -isystem /opt/homebrew/include
+  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/tinyfiledialogs" -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/nativefiledialog" -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/Graphene.dir
   OBJECT_FILE_DIR = CMakeFiles/Graphene.dir
 
@@ -58,7 +58,7 @@ build CMakeFiles/Graphene.dir/UI/Window.cpp.o: CXX_COMPILER__Graphene_Debug /Use
   DEFINES = -DTGUI_DYNAMIC
   DEP_FILE = CMakeFiles/Graphene.dir/UI/Window.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics -std=gnu++17
-  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/tinyfiledialogs" -isystem /opt/homebrew/include
+  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/tinyfiledialogs" -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/nativefiledialog" -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/Graphene.dir
   OBJECT_FILE_DIR = CMakeFiles/Graphene.dir/UI
 
@@ -66,7 +66,7 @@ build CMakeFiles/Graphene.dir/UI/Bar/UIBar.cpp.o: CXX_COMPILER__Graphene_Debug /
   DEFINES = -DTGUI_DYNAMIC
   DEP_FILE = CMakeFiles/Graphene.dir/UI/Bar/UIBar.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics -std=gnu++17
-  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/tinyfiledialogs" -isystem /opt/homebrew/include
+  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/tinyfiledialogs" -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/nativefiledialog" -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/Graphene.dir
   OBJECT_FILE_DIR = CMakeFiles/Graphene.dir/UI/Bar
 
@@ -74,7 +74,7 @@ build CMakeFiles/Graphene.dir/UI/Bar/UIBarButton.cpp.o: CXX_COMPILER__Graphene_D
   DEFINES = -DTGUI_DYNAMIC
   DEP_FILE = CMakeFiles/Graphene.dir/UI/Bar/UIBarButton.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics -std=gnu++17
-  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/tinyfiledialogs" -isystem /opt/homebrew/include
+  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/tinyfiledialogs" -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/nativefiledialog" -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/Graphene.dir
   OBJECT_FILE_DIR = CMakeFiles/Graphene.dir/UI/Bar
 
@@ -82,7 +82,7 @@ build CMakeFiles/Graphene.dir/UI/Bar/UIBarFileButton.cpp.o: CXX_COMPILER__Graphe
   DEFINES = -DTGUI_DYNAMIC
   DEP_FILE = CMakeFiles/Graphene.dir/UI/Bar/UIBarFileButton.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics -std=gnu++17
-  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/tinyfiledialogs" -isystem /opt/homebrew/include
+  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/tinyfiledialogs" -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/nativefiledialog" -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/Graphene.dir
   OBJECT_FILE_DIR = CMakeFiles/Graphene.dir/UI/Bar
 
@@ -90,7 +90,7 @@ build CMakeFiles/Graphene.dir/UI/Bar/Helpers/FIleLoader.cpp.o: CXX_COMPILER__Gra
   DEFINES = -DTGUI_DYNAMIC
   DEP_FILE = CMakeFiles/Graphene.dir/UI/Bar/Helpers/FIleLoader.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics -std=gnu++17
-  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/tinyfiledialogs" -isystem /opt/homebrew/include
+  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/tinyfiledialogs" -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/nativefiledialog" -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/Graphene.dir
   OBJECT_FILE_DIR = CMakeFiles/Graphene.dir/UI/Bar/Helpers
 
@@ -98,7 +98,7 @@ build CMakeFiles/Graphene.dir/external/tinyfiledialogs/tinyfiledialogs.c.o: C_CO
   DEFINES = -DTGUI_DYNAMIC
   DEP_FILE = CMakeFiles/Graphene.dir/external/tinyfiledialogs/tinyfiledialogs.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics
-  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/tinyfiledialogs" -isystem /opt/homebrew/include
+  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/tinyfiledialogs" -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/nativefiledialog" -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/Graphene.dir
   OBJECT_FILE_DIR = CMakeFiles/Graphene.dir/external/tinyfiledialogs
 

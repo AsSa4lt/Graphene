@@ -17,8 +17,7 @@ set(SOURCE_FILES
         UI/Bar/UIBarFileButton.hpp
         UI/Bar/Helpers/FIleLoader.cpp
         UI/Bar/Helpers/FIleLoader.hpp
-        external/tinyfiledialogs/tinyfiledialogs.c
-        )
+        external/tinyfiledialogs/tinyfiledialogs.c)
 
 # Executable
 add_executable(Graphene ${SOURCE_FILES})
@@ -26,6 +25,7 @@ add_executable(Graphene ${SOURCE_FILES})
 # Include directories
 include_directories(/usr/local/include)
 include_directories(external/tinyfiledialogs)
+include_directories(external/nativefiledialog)
 
 # Find SFML
 find_package(SFML COMPONENTS system window graphics network audio REQUIRED)
