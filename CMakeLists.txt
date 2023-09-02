@@ -17,7 +17,7 @@ set(SOURCE_FILES
         UI/Bar/UIBarFileButton.hpp
         UI/Bar/Helpers/FIleLoader.cpp
         UI/Bar/Helpers/FIleLoader.hpp
-        external/tinyfiledialogs/tinyfiledialogs.c)
+        external/tinyfiledialogs/tinyfiledialogs.c UI/Bar/UIHelpers/ErrorWindow.cpp UI/Bar/UIHelpers/ErrorWindow.hpp)
 
 # Executable
 add_executable(Graphene ${SOURCE_FILES})
