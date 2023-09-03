@@ -16,7 +16,10 @@ void UIBarFileButton::actionOnClick() {
     // Check the file extension
     if (filePath.substr(filePath.find_last_of('.') + 1) != "gph") {
         errorWindow.showError("The selected file extension is not accepted.");
+        return;
     }
+
+
 }
 
 

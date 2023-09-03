@@ -15,6 +15,7 @@ private:
     tgui::Gui& m_gui;
     tgui::ChildWindow::Ptr m_errorWindow; // smart pointer to the ChildWindow
     tgui::Label::Ptr m_errorLabel;  // smart pointer to the Label
+    tgui::Picture::Ptr  m_errorImage;
 };
 
 
