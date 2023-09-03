@@ -6,15 +6,11 @@
 
 tgui::Button::Ptr UIBarButton::GetGuiButton() {
     auto button = tgui::Button::create();
-
     button->setText(text);
     // Set position
-
     button->setPosition({(std::to_string((int)position.x) + "%").c_str(), (std::to_string((int)position.y) + "%").c_str()});
-
     // Set size
     button->setSize((std::to_string((int)size.x) + "%").c_str(), (std::to_string((int)size.y) + "%").c_str());
-
     // Connect the button's 'pressed' signal to a lambda function
     button->onPress([this](){
         actionOnClick();

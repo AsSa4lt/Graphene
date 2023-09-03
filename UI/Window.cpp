@@ -1,5 +1,6 @@
 // Window.cpp
 #include "Window.hpp"
+#include "../Math/GraphPoint.hpp"
 
 int Window::getWidth() {
     return width;
@@ -23,6 +24,7 @@ void Window::CreateWindow()  {
     for(const auto & button : windowUIBar.buttons){
         gui.add(button->GetGuiButton());
     }
+
 }
 
 
@@ -31,42 +33,40 @@ sf::RenderWindow& Window::getWindow() {
     return window;
 }
 
-#include <SFML/Graphics.hpp>
-#include <SFML/System/Clock.hpp>
-#include <SFML/System/Time.hpp>
-
-// ... (your other includes)
-
 void Window::Update() {
-    sf::Clock clock;  // Start a timer
+    sf::Clock clock;
     sf::Time timeSinceLastUpdate = sf::Time::Zero;
-    sf::Time timePerFrame = sf::seconds(1.0f / fps);  // 60 frames per second
+    sf::Time timePerFrame = sf::seconds(1.0f / fps);
+    GraphPoint point = GraphPoint(window, 200, 200);  // Initialize the GraphPoint here
 
     while (window.isOpen()) {
-        sf::Time elapsedTime = clock.restart();  // Restart the clock and return the time elapsed
+        sf::Time elapsedTime = clock.restart();
         timeSinceLastUpdate += elapsedTime;
 
         while (timeSinceLastUpdate > timePerFrame) {
             timeSinceLastUpdate -= timePerFrame;
 
-            // Process events
             sf::Event event{};
             while (window.pollEvent(event)) {
                 if (event.type == sf::Event::Closed) {
                     window.close();
                 }
-                gui.handleEvent(event);
+                gui.handleEvent(event);  // Let TGUI handle the event
             }
+            sf::Vector2i mousePos = sf::Mouse::getPosition(window);
+            point.handleMouseHover(mousePos);
         }
+        // Clear screen with white color
+        window.clear(sf::Color::White);
+        point.draw();
 
-        // Clear screen and draw
-        window.clear();
+        // Draw your GUI
         gui.draw();
+
+        // Display everything
         window.display();
     }
 }
 
 
-Window::Window() : windowUIBar(gui) {
-
-}
+Window::Window() : windowUIBar(gui) {}

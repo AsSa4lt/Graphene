@@ -25,9 +25,7 @@ ErrorWindow::ErrorWindow(tgui::Gui& gui) : m_gui(gui) {
 
     // Create and add the error label
     m_errorLabel = tgui::Label::create();
-    //m_errorLabel->setTextSize(24);
 
-    // Make text bold
     m_errorLabel->setAutoSize(true);
 
     // Center the label within the child window, to the right of the image
