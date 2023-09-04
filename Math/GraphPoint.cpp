@@ -47,7 +47,6 @@ void GraphPoint::handleMouseHover(const sf::Vector2i& mousePos) {
         }
 
         // Update the coordinate text
-        //std::string coordStr = "(" + std::to_string(m_circle.getPosition().x + m_hoverRadius) + ", " + std::to_string(m_circle.getPosition().y + m_hoverRadius) + ")";
         std::string coordStr = "(" + std::to_string(m_circle.getPosition().x + m_hoverRadius/2) + ", " + std::to_string(m_circle.getPosition().y + m_hoverRadius/2) + ")";
 
         m_coordinatesText.setString(coordStr);
