@@ -118,6 +118,14 @@ build CMakeFiles/Graphene.dir/Math/GraphPoint.cpp.o: CXX_COMPILER__Graphene_Debu
   OBJECT_DIR = CMakeFiles/Graphene.dir
   OBJECT_FILE_DIR = CMakeFiles/Graphene.dir/Math
 
+build CMakeFiles/Graphene.dir/Math/Graph.cpp.o: CXX_COMPILER__Graphene_Debug /Users/rostyslav/Desktop/C++$ coding/Graphene/Math/Graph.cpp || cmake_object_order_depends_target_Graphene
+  DEFINES = -DTGUI_DYNAMIC
+  DEP_FILE = CMakeFiles/Graphene.dir/Math/Graph.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/usr/local/include -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/tinyfiledialogs" -I"/Users/rostyslav/Desktop/C++ coding/Graphene/external/nativefiledialog" -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/Graphene.dir
+  OBJECT_FILE_DIR = CMakeFiles/Graphene.dir/Math
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Graphene
@@ -126,7 +134,7 @@ build CMakeFiles/Graphene.dir/Math/GraphPoint.cpp.o: CXX_COMPILER__Graphene_Debu
 #############################################
 # Link the executable Graphene
 
-build Graphene: CXX_EXECUTABLE_LINKER__Graphene_Debug CMakeFiles/Graphene.dir/main.cpp.o CMakeFiles/Graphene.dir/UI/Window.cpp.o CMakeFiles/Graphene.dir/UI/Bar/UIBar.cpp.o CMakeFiles/Graphene.dir/UI/Bar/UIBarButton.cpp.o CMakeFiles/Graphene.dir/UI/Bar/UIBarFileButton.cpp.o CMakeFiles/Graphene.dir/UI/Bar/Helpers/FIleLoader.cpp.o CMakeFiles/Graphene.dir/external/tinyfiledialogs/tinyfiledialogs.c.o CMakeFiles/Graphene.dir/UI/Bar/UIHelpers/ErrorWindow.cpp.o CMakeFiles/Graphene.dir/Math/GraphPoint.cpp.o | /opt/homebrew/lib/libsfml-audio.2.6.0.dylib /opt/homebrew/lib/libsfml-network.2.6.0.dylib /opt/homebrew/lib/libtgui.0.9.5.dylib /opt/homebrew/lib/libsfml-graphics.2.6.0.dylib /opt/homebrew/lib/libsfml-window.2.6.0.dylib /opt/homebrew/lib/libsfml-system.2.6.0.dylib
+build Graphene: CXX_EXECUTABLE_LINKER__Graphene_Debug CMakeFiles/Graphene.dir/main.cpp.o CMakeFiles/Graphene.dir/UI/Window.cpp.o CMakeFiles/Graphene.dir/UI/Bar/UIBar.cpp.o CMakeFiles/Graphene.dir/UI/Bar/UIBarButton.cpp.o CMakeFiles/Graphene.dir/UI/Bar/UIBarFileButton.cpp.o CMakeFiles/Graphene.dir/UI/Bar/Helpers/FIleLoader.cpp.o CMakeFiles/Graphene.dir/external/tinyfiledialogs/tinyfiledialogs.c.o CMakeFiles/Graphene.dir/UI/Bar/UIHelpers/ErrorWindow.cpp.o CMakeFiles/Graphene.dir/Math/GraphPoint.cpp.o CMakeFiles/Graphene.dir/Math/Graph.cpp.o | /opt/homebrew/lib/libsfml-audio.2.6.0.dylib /opt/homebrew/lib/libsfml-network.2.6.0.dylib /opt/homebrew/lib/libtgui.0.9.5.dylib /opt/homebrew/lib/libsfml-graphics.2.6.0.dylib /opt/homebrew/lib/libsfml-window.2.6.0.dylib /opt/homebrew/lib/libsfml-system.2.6.0.dylib
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0
   LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/lib  /opt/homebrew/lib/libsfml-audio.2.6.0.dylib  /opt/homebrew/lib/libsfml-network.2.6.0.dylib  /opt/homebrew/lib/libtgui.0.9.5.dylib  /opt/homebrew/lib/libsfml-graphics.2.6.0.dylib  /opt/homebrew/lib/libsfml-window.2.6.0.dylib  /opt/homebrew/lib/libsfml-system.2.6.0.dylib
   OBJECT_DIR = CMakeFiles/Graphene.dir

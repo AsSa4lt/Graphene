@@ -16,7 +16,7 @@ public:
 
     // Setter for position
     void setPosition(float x, float y);
-
+    sf::Vector2f getPosition() const;
 private:
     sf::RenderWindow& m_window;
     sf::CircleShape m_circle;

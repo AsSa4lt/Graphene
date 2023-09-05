@@ -1,6 +1,7 @@
 // Window.cpp
 #include "Window.hpp"
 #include "../Math/GraphPoint.hpp"
+#include "../Math/Graph.hpp"
 
 int Window::getWidth() {
     return width;
@@ -37,7 +38,15 @@ void Window::Update() {
     sf::Clock clock;
     sf::Time timeSinceLastUpdate = sf::Time::Zero;
     sf::Time timePerFrame = sf::seconds(1.0f / fps);
-    GraphPoint point = GraphPoint(window, 200, 200);  // Initialize the GraphPoint here
+
+    // Create a vector of GraphPoint objects
+    std::vector<GraphPoint> graphPoints = {
+            GraphPoint(window, 100, 100),
+            GraphPoint(window, 200, 200),
+            GraphPoint(window, 300, 150),
+            GraphPoint(window, 400, 250)
+    };
+    Graph* g = new Graph(window, graphPoints);
 
     while (window.isOpen()) {
         sf::Time elapsedTime = clock.restart();
@@ -53,12 +62,12 @@ void Window::Update() {
                 }
                 gui.handleEvent(event);  // Let TGUI handle the event
             }
-            sf::Vector2i mousePos = sf::Mouse::getPosition(window);
-            point.handleMouseHover(mousePos);
         }
+
         // Clear screen with white color
-        window.clear(sf::Color::White);
-        point.draw();
+        window.clear(sf::Color::Black);
+
+        g->draw();
 
         // Draw your GUI
         gui.draw();
@@ -67,6 +76,7 @@ void Window::Update() {
         window.display();
     }
 }
+
 
 
 Window::Window() : windowUIBar(gui) {}

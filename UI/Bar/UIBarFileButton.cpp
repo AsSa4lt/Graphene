@@ -18,8 +18,6 @@ void UIBarFileButton::actionOnClick() {
         errorWindow.showError("The selected file extension is not accepted.");
         return;
     }
-
-
 }
 
 
