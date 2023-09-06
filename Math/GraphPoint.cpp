@@ -14,8 +14,11 @@ GraphPoint::GraphPoint(sf::RenderWindow& window, float x, float y) : m_window(wi
         // Handle font loading error
     }
     m_coordinatesText.setFont(m_font);
+    m_coordinatesText.setPosition(m_originalPosition.x, m_originalPosition.y + m_hoverRadius + 5);
+    m_textBackground.setPosition(m_originalPosition.x, m_originalPosition.y + m_hoverRadius + 5);
+
     m_coordinatesText.setCharacterSize(15);
-    m_textBackground.setFillColor(sf::Color::Yellow);
+    m_textBackground.setFillColor(sf::Color::Cyan);
     m_coordinatesText.setFillColor(sf::Color::White);
     m_originalPosition = sf::Vector2f(x, y);  // Set the original position
 

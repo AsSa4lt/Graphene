@@ -16,8 +16,6 @@ Graph::Graph(sf::RenderWindow& window, const std::vector<GraphPoint>& points)
 void Graph::draw() {
     // Draw lines
     m_window.draw(m_lines);
-
-
     sf::Vector2i mousePos = sf::Mouse::getPosition(m_window);
     for (auto& point : m_points) {
         point.handleMouseHover(mousePos);
@@ -27,4 +25,9 @@ void Graph::draw() {
         point.draw();
     }
 
+}
+void Graph::handleMouseHover(const sf::Vector2i& mousePos) {
+    for (auto& point : m_points) {
+        point.handleMouseHover(mousePos);
+    }
 }

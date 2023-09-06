@@ -48,29 +48,33 @@ void Window::Update() {
     };
     Graph* g = new Graph(window, graphPoints);
 
+    GraphPoint* p = new GraphPoint(window, 180, 120);
     while (window.isOpen()) {
         sf::Time elapsedTime = clock.restart();
         timeSinceLastUpdate += elapsedTime;
-
         while (timeSinceLastUpdate > timePerFrame) {
             timeSinceLastUpdate -= timePerFrame;
-
+            sf::Vector2i mousePos = sf::Mouse::getPosition(window);
             sf::Event event{};
             while (window.pollEvent(event)) {
                 if (event.type == sf::Event::Closed) {
                     window.close();
                 }
-                gui.handleEvent(event);  // Let TGUI handle the event
+                sf::Vector2i mousePos = sf::Mouse::getPosition(window);
+                p->handleMouseHover(mousePos);
+                g->handleMouseHover(mousePos); // Add this line
+                gui.handleEvent(event);
             }
         }
 
         // Clear screen with white color
         window.clear(sf::Color::Black);
-
-        g->draw();
-
         // Draw your GUI
         gui.draw();
+
+        p->draw();
+        // Graph
+        g->draw();
 
         // Display everything
         window.display();
