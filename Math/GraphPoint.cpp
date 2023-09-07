@@ -4,7 +4,7 @@
 
 #include "GraphPoint.hpp"
 
-GraphPoint::GraphPoint(sf::RenderWindow& window, float x, float y) : m_window(window), m_radius(10.f), m_hoverRadius(20.f) {
+GraphPoint::GraphPoint(float x, float y) : m_radius(10.f), m_hoverRadius(20.f), m_window(nullptr) {
     m_circle.setRadius(m_radius);
     m_circle.setPosition(x - m_radius, y - m_radius); // Position should be set so the circle is centered
     m_circle.setFillColor(sf::Color::Green);
@@ -29,10 +29,10 @@ void GraphPoint::setPosition(float x, float y) {
 }
 
 void GraphPoint::draw() {
-    m_window.draw(m_circle);
+    m_window->draw(m_circle);
     if (m_circle.getRadius() == m_hoverRadius) { // Draw text only when hovered
-        m_window.draw(m_textBackground);
-        m_window.draw(m_coordinatesText);
+        m_window->draw(m_textBackground);
+        m_window->draw(m_coordinatesText);
     }
 }
 

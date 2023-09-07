@@ -22,6 +22,7 @@ void Window::setHeight(int _height) {
 void Window::CreateWindow()  {
     window.create(sf::VideoMode(width, height), "Graphene");
     gui.setTarget(window);
+
     for(const auto & button : windowUIBar.buttons){
         gui.add(button->GetGuiButton());
     }
@@ -41,14 +42,14 @@ void Window::Update() {
 
     // Create a vector of GraphPoint objects
     std::vector<GraphPoint> graphPoints = {
-            GraphPoint(window, 100, 100),
-            GraphPoint(window, 200, 200),
-            GraphPoint(window, 300, 150),
-            GraphPoint(window, 400, 250)
+            GraphPoint(100, 100),
+            GraphPoint(200, 200),
+            GraphPoint(300, 150),
+            GraphPoint(400, 250)
     };
-    Graph* g = new Graph(window, graphPoints);
+    Graph* g = new Graph(graphPoints);
 
-    GraphPoint* p = new GraphPoint(window, 180, 120);
+    GraphPoint* p = new GraphPoint(80, 120);
     while (window.isOpen()) {
         sf::Time elapsedTime = clock.restart();
         timeSinceLastUpdate += elapsedTime;
@@ -60,9 +61,8 @@ void Window::Update() {
                 if (event.type == sf::Event::Closed) {
                     window.close();
                 }
-                sf::Vector2i mousePos = sf::Mouse::getPosition(window);
                 p->handleMouseHover(mousePos);
-                g->handleMouseHover(mousePos); // Add this line
+                g->handleMouseHover(mousePos);
                 gui.handleEvent(event);
             }
         }

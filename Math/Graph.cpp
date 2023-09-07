@@ -4,12 +4,15 @@
 
 #include "Graph.hpp"
 
-Graph::Graph(sf::RenderWindow& window, const std::vector<GraphPoint>& points)
-        : m_window(window), m_points(points), m_lines(sf::LinesStrip, points.size()) {
-
+Graph::Graph(const std::vector<GraphPoint>& points)
+        :  m_points(points), m_lines(sf::LinesStrip, points.size()) {
+    m_window.create(sf::VideoMode(500, 500), "Graphene");
     // Initialize lines connecting points
     for (size_t i = 0; i < points.size(); ++i) {
         m_lines[i].position = points[i].getPosition();
+    }
+    for (auto& point : m_points) {
+        point.setWindow(m_window);
     }
 }
 
@@ -24,6 +27,12 @@ void Graph::draw() {
     for (auto& point : m_points) {
         point.draw();
     }
+    sf::Event event{};
+    while (m_window.pollEvent(event)) {
+        if (event.type == sf::Event::Closed) {
+            m_window.close();
+        }
+    }
 
 }
 void Graph::handleMouseHover(const sf::Vector2i& mousePos) {
@@ -31,3 +40,4 @@ void Graph::handleMouseHover(const sf::Vector2i& mousePos) {
         point.handleMouseHover(mousePos);
     }
 }
+

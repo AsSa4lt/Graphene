@@ -12,11 +12,11 @@
 
 class Graph {
 public:
-    Graph(sf::RenderWindow &window, const std::vector<GraphPoint> &points);
+    explicit Graph(const std::vector<GraphPoint> &points);
     void draw();
     void handleMouseHover(const sf::Vector2i& mousePos);
 private:
-    sf::RenderWindow& m_window;
+    sf::RenderWindow m_window;
     sf::Vector2f m_position;
     sf::Vector2f m_size;
     std::vector<GraphPoint> m_points;
