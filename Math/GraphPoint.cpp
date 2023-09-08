@@ -39,8 +39,9 @@ void GraphPoint::handleMouseHover(const sf::Vector2i& mousePos) {
         }
 
         // Update the coordinate text for the TGUI Label
-        std::string coordStr = "(" + std::to_string(m_originalPosition.x) + ", " + std::to_string(m_originalPosition.y) + ")";
+        std::string coordStr = "(" + formatCoord(m_originalPosition.x) + ", " + formatCoord(m_originalPosition.y) + ")";
         m_coordinatesLabel->setText(coordStr);
+
         m_coordinatesLabel->setVisible(true);  // make visible label
 
     } else {
@@ -53,6 +54,21 @@ void GraphPoint::handleMouseHover(const sf::Vector2i& mousePos) {
     }
 }
 
+
+
 sf::Vector2f GraphPoint::getPosition() const {
     return m_originalPosition;
 }
+
+std::string GraphPoint::formatCoord(float value) {
+    std::ostringstream out;
+    out << std::fixed << std::setprecision(8) << value;  // Convert to string with sufficient precision
+    std::string str = out.str();
+
+    // Erase trailing zeros and unnecessary decimal point
+    str.erase(str.find_last_not_of('0') + 1, std::string::npos);
+    if (str.back() == '.') {
+        str.pop_back();
+    }
+
+    return str;}

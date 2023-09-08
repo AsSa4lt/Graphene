@@ -32,6 +32,7 @@ private:
 
     float m_radius; // Circle radius
     float m_hoverRadius; // Radius when hovered
+    std::string formatCoord(float value);
 };
 
 #endif // GRAPHENE_GRAPHPOINT_H
