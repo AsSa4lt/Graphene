@@ -7,10 +7,13 @@
 
 #include <SFML/Graphics.hpp>
 #include "exception"
+#include "iostream"
+
+#include <TGUI/TGUI.hpp>
 
 class GraphPoint {
 public:
-    GraphPoint(sf::RenderWindow& window, float x, float y);
+    GraphPoint(sf::RenderWindow& window, tgui::Gui& gui, float x, float y);
 
     void draw();
     void handleMouseHover(const sf::Vector2i& mousePos);
@@ -18,12 +21,13 @@ public:
     // Setter for position
     void setPosition(float x, float y);
     sf::Vector2f getPosition() const;
+
 private:
     sf::RenderWindow& m_window;
+    tgui::Gui& m_gui; // We'll pass gui reference from Graph to GraphPoint
     sf::CircleShape m_circle;
-    sf::RectangleShape m_textBackground;
-    sf::Text m_coordinatesText;
-    sf::Font m_font;
+    tgui::Label::Ptr m_coordinatesLabel; // This replaces sf::Text
+
     sf::Vector2f m_originalPosition;
 
     float m_radius; // Circle radius

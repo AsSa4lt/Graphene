@@ -15,7 +15,6 @@ class Graph {
 public:
     explicit Graph(const std::vector<Vector2> &points);
     void draw();
-    void handleMouseHover(const sf::Vector2i& mousePos);
 private:
     sf::RenderWindow m_window;
     [[maybe_unused]] sf::Vector2f m_position;

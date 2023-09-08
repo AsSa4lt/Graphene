@@ -54,13 +54,11 @@ void Window::Update() {
         timeSinceLastUpdate += elapsedTime;
         while (timeSinceLastUpdate > timePerFrame) {
             timeSinceLastUpdate -= timePerFrame;
-            sf::Vector2i mousePos = sf::Mouse::getPosition(window);
             sf::Event event{};
             while (window.pollEvent(event)) {
                 if (event.type == sf::Event::Closed) {
                     window.close();
                 }
-                g->handleMouseHover(mousePos);
                 gui.handleEvent(event);
             }
         }
