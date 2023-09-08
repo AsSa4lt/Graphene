@@ -41,15 +41,14 @@ void Window::Update() {
     sf::Time timePerFrame = sf::seconds(1.0f / fps);
 
     // Create a vector of GraphPoint objects
-    std::vector<GraphPoint> graphPoints = {
-            GraphPoint(100, 100),
-            GraphPoint(200, 200),
-            GraphPoint(300, 150),
-            GraphPoint(400, 250)
+    std::vector<Vector2> graphPoints = {
+            Vector2({100, 100}),
+            Vector2({200, 200}),
+            Vector2({300, 150}),
+            Vector2({400, 250})
     };
     Graph* g = new Graph(graphPoints);
 
-    GraphPoint* p = new GraphPoint(80, 120);
     while (window.isOpen()) {
         sf::Time elapsedTime = clock.restart();
         timeSinceLastUpdate += elapsedTime;
@@ -61,7 +60,6 @@ void Window::Update() {
                 if (event.type == sf::Event::Closed) {
                     window.close();
                 }
-                p->handleMouseHover(mousePos);
                 g->handleMouseHover(mousePos);
                 gui.handleEvent(event);
             }
@@ -72,7 +70,6 @@ void Window::Update() {
         // Draw your GUI
         gui.draw();
 
-        p->draw();
         // Graph
         g->draw();
 

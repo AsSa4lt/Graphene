@@ -6,6 +6,7 @@
 #include "Bar/UIBar.hpp"
 #include <SFML/System/Clock.hpp>
 #include <SFML/System/Time.hpp>
+#include <raymath.h>
 
 class Window {
 public:

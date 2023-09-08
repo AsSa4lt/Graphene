@@ -9,18 +9,20 @@
 #include "GraphPoint.hpp"
 #include <SFML/Graphics.hpp>
 #include <TGUI/TGUI.hpp>
+#include <raymath.h>
 
 class Graph {
 public:
-    explicit Graph(const std::vector<GraphPoint> &points);
+    explicit Graph(const std::vector<Vector2> &points);
     void draw();
     void handleMouseHover(const sf::Vector2i& mousePos);
 private:
     sf::RenderWindow m_window;
-    sf::Vector2f m_position;
-    sf::Vector2f m_size;
+    [[maybe_unused]] sf::Vector2f m_position;
+    [[maybe_unused]] sf::Vector2f m_size;
     std::vector<GraphPoint> m_points;
     sf::VertexArray m_lines;
+    tgui::Gui gui;
 };
 
 

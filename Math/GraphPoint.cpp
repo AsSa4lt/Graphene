@@ -4,7 +4,11 @@
 
 #include "GraphPoint.hpp"
 
-GraphPoint::GraphPoint(float x, float y) : m_radius(10.f), m_hoverRadius(20.f), m_window(nullptr) {
+GraphPoint::GraphPoint(sf::RenderWindow& window, float x, float y)
+        : m_window(window),
+          m_radius(10.f),
+          m_hoverRadius(20.f),
+          m_originalPosition(x, y) {
     m_circle.setRadius(m_radius);
     m_circle.setPosition(x - m_radius, y - m_radius); // Position should be set so the circle is centered
     m_circle.setFillColor(sf::Color::Green);
@@ -12,6 +16,8 @@ GraphPoint::GraphPoint(float x, float y) : m_radius(10.f), m_hoverRadius(20.f), 
     // Load font (ensure this font file exists)
     if (!m_font.loadFromFile("../SRC/Arial.ttf")) {
         // Handle font loading error
+        //std::cout << "Failed to load font from ../SRC/Arial.ttf" << std::endl;
+        throw std::runtime_error("Failed to load font.");
     }
     m_coordinatesText.setFont(m_font);
     m_coordinatesText.setPosition(m_originalPosition.x, m_originalPosition.y + m_hoverRadius + 5);
@@ -29,10 +35,10 @@ void GraphPoint::setPosition(float x, float y) {
 }
 
 void GraphPoint::draw() {
-    m_window->draw(m_circle);
+    m_window.draw(m_circle);
     if (m_circle.getRadius() == m_hoverRadius) { // Draw text only when hovered
-        m_window->draw(m_textBackground);
-        m_window->draw(m_coordinatesText);
+        m_window.draw(m_textBackground);
+        m_window.draw(m_coordinatesText);
     }
 }
 

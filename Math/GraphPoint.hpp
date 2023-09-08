@@ -6,10 +6,11 @@
 #define GRAPHENE_GRAPHPOINT_H
 
 #include <SFML/Graphics.hpp>
+#include "exception"
 
 class GraphPoint {
 public:
-    GraphPoint(float x, float y);
+    GraphPoint(sf::RenderWindow& window, float x, float y);
 
     void draw();
     void handleMouseHover(const sf::Vector2i& mousePos);
@@ -17,12 +18,8 @@ public:
     // Setter for position
     void setPosition(float x, float y);
     sf::Vector2f getPosition() const;
-    void setWindow(sf::RenderWindow& window) {
-        m_window = &window;
-    }
-
 private:
-    sf::RenderWindow* m_window;
+    sf::RenderWindow& m_window;
     sf::CircleShape m_circle;
     sf::RectangleShape m_textBackground;
     sf::Text m_coordinatesText;
