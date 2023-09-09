@@ -4,7 +4,7 @@
 
 #include "Graph.hpp"
 
-Graph::Graph(const std::vector<Vector2>& points)
+Graph::Graph(const std::vector<Vector2>& points, const std::vector<Vector2>& shown_positions)
         : m_lines(sf::LinesStrip, points.size()) {
     m_window.create(sf::VideoMode(500, 500), "Graphene");
     // Initialize lines connecting points
@@ -13,7 +13,7 @@ Graph::Graph(const std::vector<Vector2>& points)
         m_lines[i].color = sf::Color::Red;
     }
     for(int i = 0; i < points.size(); i ++){
-        m_points.emplace_back(m_window, gui ,points[i].x, points[i].y);
+        m_points.emplace_back(m_window, gui ,points[i].x, points[i].y, shown_positions[i].x, shown_positions[i].y);
     }
     gui.setTarget(m_window);
 

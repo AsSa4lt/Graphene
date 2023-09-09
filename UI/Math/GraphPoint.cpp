@@ -4,12 +4,13 @@
 
 #include "GraphPoint.hpp"
 
-GraphPoint::GraphPoint(sf::RenderWindow& window, tgui::Gui& gui, float x, float y)
+GraphPoint::GraphPoint(sf::RenderWindow& window, tgui::Gui& gui, float x, float y, float x_show, float y_show)
         : m_window(window),
           m_gui(gui),
           m_radius(10.f),
           m_hoverRadius(20.f),
-          m_originalPosition(x, y) {
+          m_originalPosition(x, y),
+          m_shownPosition(x_show, y_show){
 
     m_circle.setRadius(m_radius);
     m_circle.setPosition(x - m_radius, y - m_radius);
@@ -39,7 +40,7 @@ void GraphPoint::handleMouseHover(const sf::Vector2i& mousePos) {
         }
 
         // Update the coordinate text for the TGUI Label
-        std::string coordStr = "(" + formatCoord(m_originalPosition.x) + ", " + formatCoord(m_originalPosition.y) + ")";
+        std::string coordStr = "(" + formatCoord(m_shownPosition.x) + ", " + formatCoord(m_shownPosition.y) + ")";
         m_coordinatesLabel->setText(coordStr);
 
         m_coordinatesLabel->setVisible(true);  // make visible label

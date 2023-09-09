@@ -1,7 +1,8 @@
 // Window.cpp
 #include "Window.hpp"
-#include "../Math/GraphPoint.hpp"
-#include "../Math/Graph.hpp"
+#include "Math/GraphPoint.hpp"
+#include "Math/Graph.hpp"
+#include "Math/CoordTable.hpp"
 
 int Window::getWidth() {
     return width;
@@ -47,7 +48,14 @@ void Window::Update() {
             Vector2({300, 150}),
             Vector2({400, 250})
     };
-    Graph* g = new Graph(graphPoints);
+    std::vector<Vector2> graphPointShown = {
+            Vector2({110, 100}),
+            Vector2({200, 200}),
+            Vector2({300, 150}),
+            Vector2({400, 250})
+    };
+    Graph* g = new Graph(graphPoints, graphPointShown);
+    CoordTable table;
 
     while (window.isOpen()) {
         sf::Time elapsedTime = clock.restart();
@@ -70,6 +78,7 @@ void Window::Update() {
 
         // Graph
         g->draw();
+        table.run();
 
         // Display everything
         window.display();

@@ -13,7 +13,7 @@
 
 class Graph {
 public:
-    explicit Graph(const std::vector<Vector2> &points);
+    Graph(const std::vector<Vector2> &points, const std::vector<Vector2>& shown_positions);
     void draw();
 private:
     sf::RenderWindow m_window;

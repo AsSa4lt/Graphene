@@ -13,7 +13,7 @@
 
 class GraphPoint {
 public:
-    GraphPoint(sf::RenderWindow& window, tgui::Gui& gui, float x, float y);
+    GraphPoint(sf::RenderWindow& window, tgui::Gui& gui, float x, float y, float x_show, float y_show);
 
     void draw();
     void handleMouseHover(const sf::Vector2i& mousePos);
@@ -29,6 +29,7 @@ private:
     tgui::Label::Ptr m_coordinatesLabel; // This replaces sf::Text
 
     sf::Vector2f m_originalPosition;
+    sf::Vector2f m_shownPosition;
 
     float m_radius; // Circle radius
     float m_hoverRadius; // Radius when hovered
