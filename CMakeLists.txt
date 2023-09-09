@@ -17,7 +17,7 @@ set(SOURCE_FILES
         UI/Bar/UIBarFileButton.hpp
         UI/Bar/Helpers/FIleLoader.cpp
         UI/Bar/Helpers/FIleLoader.hpp
-        external/tinyfiledialogs/tinyfiledialogs.c UI/Bar/UIHelpers/ErrorWindow.cpp UI/Bar/UIHelpers/ErrorWindow.hpp UI/Math/GraphPoint.cpp UI/Math/GraphPoint.hpp UI/Math/Graph.cpp UI/Math/Graph.hpp UI/Math/CoordTable.cpp UI/Math/CoordTable.hpp)
+        external/tinyfiledialogs/tinyfiledialogs.c UI/Bar/UIHelpers/ErrorWindow.cpp UI/Bar/UIHelpers/ErrorWindow.hpp UI/Math/GraphPoint.cpp UI/Math/GraphPoint.hpp UI/Math/GraphDisplay.cpp UI/Math/GraphDisplay.hpp UI/Math/CoordTable.cpp UI/Math/CoordTable.hpp UI/Bar/UIHelpers/GraphsController.cpp UI/Bar/UIHelpers/GraphsController.hpp UI/Bar/UIHelpers/Graph.cpp UI/Bar/UIHelpers/Graph.h)
 
 # Executable
 add_executable(Graphene ${SOURCE_FILES})

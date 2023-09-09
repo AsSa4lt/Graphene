@@ -1,7 +1,7 @@
 // Window.cpp
 #include "Window.hpp"
 #include "Math/GraphPoint.hpp"
-#include "Math/Graph.hpp"
+#include "Math/GraphDisplay.hpp"
 #include "Math/CoordTable.hpp"
 
 int Window::getWidth() {
@@ -54,7 +54,7 @@ void Window::Update() {
             Vector2({300, 150}),
             Vector2({400, 250})
     };
-    Graph* g = new Graph(graphPoints, graphPointShown);
+    GraphDisplay* g = new GraphDisplay(graphPoints, graphPointShown);
     CoordTable table;
 
     while (window.isOpen()) {
@@ -76,7 +76,7 @@ void Window::Update() {
         // Draw your GUI
         gui.draw();
 
-        // Graph
+        // GraphDisplay
         g->draw();
         table.run();
 

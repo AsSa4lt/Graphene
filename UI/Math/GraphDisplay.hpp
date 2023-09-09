@@ -2,8 +2,8 @@
 // Created by Rostyslav on 05.09.2023.
 //
 
-#ifndef GRAPHENE_GRAPH_HPP
-#define GRAPHENE_GRAPH_HPP
+#ifndef GRAPHENE_GRAPHDISPLAY_HPP
+#define GRAPHENE_GRAPHDISPLAY_HPP
 
 #include <vector>
 #include "GraphPoint.hpp"
@@ -11,9 +11,9 @@
 #include <TGUI/TGUI.hpp>
 #include <raymath.h>
 
-class Graph {
+class GraphDisplay {
 public:
-    Graph(const std::vector<Vector2> &points, const std::vector<Vector2>& shown_positions);
+    GraphDisplay(const std::vector<Vector2> &points, const std::vector<Vector2>& shown_positions);
     void draw();
 private:
     sf::RenderWindow m_window;
@@ -27,4 +27,4 @@ private:
 
 
 
-#endif // GRAPHENE_GRAPH_HPP
+#endif // GRAPHENE_GRAPHDISPLAY_HPP

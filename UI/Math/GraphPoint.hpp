@@ -24,7 +24,7 @@ public:
 
 private:
     sf::RenderWindow& m_window;
-    tgui::Gui& m_gui; // We'll pass gui reference from Graph to GraphPoint
+    tgui::Gui& m_gui; // We'll pass gui reference from GraphDisplay to GraphPoint
     sf::CircleShape m_circle;
     tgui::Label::Ptr m_coordinatesLabel; // This replaces sf::Text
 

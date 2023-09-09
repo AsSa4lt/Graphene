@@ -2,9 +2,9 @@
 // Created by Rostyslav on 05.09.2023.
 //
 
-#include "Graph.hpp"
+#include "GraphDisplay.hpp"
 
-Graph::Graph(const std::vector<Vector2>& points, const std::vector<Vector2>& shown_positions)
+GraphDisplay::GraphDisplay(const std::vector<Vector2>& points, const std::vector<Vector2>& shown_positions)
         : m_lines(sf::LinesStrip, points.size()) {
     m_window.create(sf::VideoMode(500, 500), "Graphene");
     // Initialize lines connecting points
@@ -19,7 +19,7 @@ Graph::Graph(const std::vector<Vector2>& points, const std::vector<Vector2>& sho
 
 }
 
-void Graph::draw() {
+void GraphDisplay::draw() {
     m_window.clear(sf::Color::White);
     // Draw lines
     gui.draw();
