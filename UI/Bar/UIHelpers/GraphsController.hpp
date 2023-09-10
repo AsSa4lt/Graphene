@@ -11,6 +11,7 @@
 static class GraphsController {
 public:
     std::vector<Graph> graphs;
+    void Update();
 };
 
 

@@ -13,6 +13,8 @@ class Graph {
 public:
     GraphDisplay graphDisplay;
     CoordTable coordTable;
+    bool isOpened;
+    void Update();
 };
 
 
