@@ -7,6 +7,7 @@
 GraphDisplay::GraphDisplay(const std::vector<Vector2>& points, const std::vector<Vector2>& shown_positions)
         : m_lines(sf::LinesStrip, points.size()) {
     m_window.create(sf::VideoMode(500, 500), "Graphene");
+    gui.setTarget(m_window);
     // Initialize lines connecting points
     for (size_t i = 0; i < points.size(); ++i) {
         m_lines[i].position = {points[i].x, points[i].y};
@@ -15,12 +16,11 @@ GraphDisplay::GraphDisplay(const std::vector<Vector2>& points, const std::vector
     for(int i = 0; i < points.size(); i ++){
         m_points.emplace_back(m_window, gui ,points[i].x, points[i].y, shown_positions[i].x, shown_positions[i].y);
     }
-    gui.setTarget(m_window);
 
 }
 
 void GraphDisplay::draw() {
-    m_window.clear(sf::Color::White);
+    m_window.clear(sf::Color::White);   // here error
     // Draw lines
     gui.draw();
 

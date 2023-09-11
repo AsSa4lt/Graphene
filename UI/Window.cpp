@@ -3,6 +3,7 @@
 #include "Math/GraphPoint.hpp"
 #include "Math/GraphDisplay.hpp"
 #include "Math/CoordTable.hpp"
+#include "Bar/UIHelpers/GraphsController.hpp"
 
 int Window::getWidth() {
     return width;
@@ -41,21 +42,8 @@ void Window::Update() {
     sf::Time timeSinceLastUpdate = sf::Time::Zero;
     sf::Time timePerFrame = sf::seconds(1.0f / fps);
 
-    // Create a vector of GraphPoint objects
-    std::vector<Vector2> graphPoints = {
-            Vector2({100, 100}),
-            Vector2({200, 200}),
-            Vector2({300, 150}),
-            Vector2({400, 250})
-    };
-    std::vector<Vector2> graphPointShown = {
-            Vector2({110, 100}),
-            Vector2({200, 200}),
-            Vector2({300, 150}),
-            Vector2({400, 250})
-    };
-    GraphDisplay* g = new GraphDisplay(graphPoints, graphPointShown);
-    CoordTable table;
+    GraphsController& controller = GraphsController::getInstance();
+
 
     while (window.isOpen()) {
         sf::Time elapsedTime = clock.restart();
@@ -76,12 +64,11 @@ void Window::Update() {
         // Draw your GUI
         gui.draw();
 
-        // GraphDisplay
-        g->draw();
-        table.run();
-
         // Display everything
         window.display();
+
+        // GraphDisplay
+        controller.Update();
     }
 }
 
