@@ -16,7 +16,6 @@ GraphDisplay::GraphDisplay(const std::vector<Vector2>& points, const std::vector
         m_points.emplace_back(m_window, gui ,points[i].x, points[i].y, shown_positions[i].x, shown_positions[i].y);
     }
     gui.setTarget(m_window);
-
 }
 
 void GraphDisplay::draw() {

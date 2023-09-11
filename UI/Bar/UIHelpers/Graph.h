@@ -10,10 +10,16 @@
 #include "../../Math/CoordTable.hpp"
 
 class Graph {
+private:
+    unsigned short index;
+    GraphDisplay& graphDisplay;
+    CoordTable& coordTable;
 public:
-    GraphDisplay graphDisplay;
-    CoordTable coordTable;
+    Graph(GraphDisplay& _graphDisplay, CoordTable& _coordTable, unsigned short _index);
+    std::string name;
     bool isOpened;
+
+    void SetIndex(unsigned short _index);
     void Update();
 };
 

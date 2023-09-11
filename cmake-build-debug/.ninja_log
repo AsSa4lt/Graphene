@@ -34,3 +34,14 @@
 1383	1635	1693417036426870000	external/nativefiledialog-cmake/libnativefiledialog.a	5fd94ef7ee24e886
 10	66	1693417212285721971	external/nativefiledialog/CMakeFiles/nfd.dir/src/nfd_common.c.o	54f29f8859976f1a
 687	2222	1693245806927629029	CMakeFiles/Graphene.dir/external/ImGuiFileDialog/ImGuiFileDialog.cpp.o	54c61399a7f7e0b5
+9	1464	1694456675242416745	CMakeFiles/Graphene.dir/UI/Math/GraphPoint.cpp.o	988425909071a84f
+9	1485	1694456675264225999	CMakeFiles/Graphene.dir/UI/Bar/UIHelpers/GraphsController.cpp.o	65b5f8e9b2cd41f0
+9	1492	1694456675275505592	CMakeFiles/Graphene.dir/UI/Bar/UIHelpers/Graph.cpp.o	64e0d414e970c652
+9	1498	1694456675282258806	CMakeFiles/Graphene.dir/UI/Math/GraphDisplay.cpp.o	f0148990e278b852
+8	1505	1694456675287665944	CMakeFiles/Graphene.dir/main.cpp.o	d960cac799cf4115
+9	1515	1694456675292222780	CMakeFiles/Graphene.dir/UI/Window.cpp.o	cdd37ce2a75c7779
+1515	1578	1694456675367140115	Graphene	27a0bef515d2372b
+5	1115	1694456702598531332	CMakeFiles/Graphene.dir/UI/Math/GraphDisplay.cpp.o	f0148990e278b852
+1115	1164	1694456702653178233	Graphene	27a0bef515d2372b
+3	1117	1694456955797901698	CMakeFiles/Graphene.dir/UI/Bar/UIHelpers/Graph.cpp.o	64e0d414e970c652
+1117	1176	1694456955862248748	Graphene	27a0bef515d2372b

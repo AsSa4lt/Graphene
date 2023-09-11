@@ -7,11 +7,19 @@
 #ifndef GRAPHENE_GRAPHSCONTROLLER_HPP
 #define GRAPHENE_GRAPHSCONTROLLER_HPP
 
-
-static class GraphsController {
+// usage
+// GraphsController& controller = GraphsController::getInstance();
+// i am stupid a bit, sorry
+class GraphsController {
+private:
+    GraphsController();
 public:
-    std::vector<Graph> graphs;
+    static GraphsController& getInstance();
+    std::vector<std::unique_ptr<Graph>> graphs;
     void Update();
+    void AddGraph(std::unique_ptr<Graph> newGraph);
+    GraphsController(GraphsController const&) = delete;
+    void operator=(GraphsController const&) = delete;
 };
 
 
