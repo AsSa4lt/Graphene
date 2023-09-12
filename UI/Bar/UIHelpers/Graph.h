@@ -6,8 +6,8 @@
 #define GRAPHENE_GRAPH_H
 
 
-#include "../../Math/GraphDisplay.hpp"
-#include "../../Math/CoordTable.hpp"
+#include "../../GraphUI/GraphDisplay.hpp"
+#include "../../GraphUI/CoordTable.hpp"
 
 class Graph {
 private:

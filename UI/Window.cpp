@@ -1,8 +1,8 @@
 // Window.cpp
 #include "Window.hpp"
-#include "Math/GraphPoint.hpp"
-#include "Math/GraphDisplay.hpp"
-#include "Math/CoordTable.hpp"
+#include "GraphUI/GraphPoint.hpp"
+#include "GraphUI/GraphDisplay.hpp"
+#include "GraphUI/CoordTable.hpp"
 #include "Bar/UIHelpers/GraphsController.hpp"
 
 int Window::getWidth() {
