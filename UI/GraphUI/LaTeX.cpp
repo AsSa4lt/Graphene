@@ -5,6 +5,7 @@
 #include "LaTeX.hpp"
 
 float LaTeX::GetValuePoint(float x) {
+    // implement here
     return 0;
 }
 
